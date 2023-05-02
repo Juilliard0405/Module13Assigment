@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="467.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelview.AccessFBView">
    <children>
-      <VBox alignment="CENTER_RIGHT" layoutX="7.0" prefHeight="166.0" prefWidth="485.0" spacing="10.0">
+      <VBox alignment="CENTER_RIGHT" layoutX="7.0" prefHeight="165.0" prefWidth="485.0" spacing="10.0">
          <children>
             <TextField fx:id="nameField" alignment="TOP_LEFT" promptText="Name" />
             <TextField fx:id="majorField" promptText="Major" />
@@ -32,7 +32,10 @@
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="switchroot" mnemonicParsing="false" onAction="#switchToSecondary" text="Switch" textAlignment="CENTER" />
+                  <Button fx:id="switchroot" mnemonicParsing="false" onAction="#switchToSecondary" text="Switch" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Button>
                </children>
             </HBox>
          </children>
@@ -40,7 +43,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </VBox>
-      <TextArea fx:id="outputField" layoutX="6.0" layoutY="157.0" prefHeight="304.0" prefWidth="485.0" />
+      <TextArea fx:id="outputField" layoutX="6.0" layoutY="173.0" prefHeight="288.0" prefWidth="485.0" />
    </children>
    <opaqueInsets>
       <Insets />
